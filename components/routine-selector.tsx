@@ -87,9 +87,9 @@ export default function RoutineSelector() {
             onValueChange={(value) => setSelectedDuration(Number.parseInt(value) as Duration)}
           >
             <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="5">5 minutes</TabsTrigger>
-              <TabsTrigger value="10">10 minutes</TabsTrigger>
-              <TabsTrigger value="15">15 minutes</TabsTrigger>
+              <TabsTrigger value="5" className="hover:bg-gray-200 mx-1 my-0">5 minutes</TabsTrigger>
+              <TabsTrigger value="10" className="hover:bg-gray-200 mx-1 my-0">10 minutes</TabsTrigger>
+              <TabsTrigger value="15" className="hover:bg-gray-200 mx-1 my-0">15 minutes</TabsTrigger>
             </TabsList>
           </Tabs>
         </CardContent>

@@ -249,7 +249,7 @@ export default function RoutineDisplay({ bodyArea, duration, onBack }: RoutineDi
               {routine.slice(currentExerciseIndex + 1, currentExerciseIndex + 4).length > 0 ? (
                 <>
                   {routine.slice(currentExerciseIndex + 1, currentExerciseIndex + 4).map((exercise, index) => (
-                    <div key={index} className="flex items-center justify-between rounded-lg border p-3">
+                    <div key={index} className="flex items-center justify-between rounded-lg border p-3 hover:bg-muted">
                       <div>
                         <h4 className="font-medium">{exercise.name}</h4>
                         <p className="text-sm text-muted-foreground">{exercise.duration} seconds</p>
